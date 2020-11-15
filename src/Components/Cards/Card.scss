@@ -1,0 +1,28 @@
+.Card {
+  margin-right: 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+  width: 330px;
+
+  .cardImg {
+    img {
+      width: 100%;
+    }
+  }
+
+  .cardMain {
+    padding: 20px 30px;
+
+    h3 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: rgb(102, 102, 102);
+      letter-spacing: -0.25px;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Status {
+  span {
+    padding: 0 8px;
+    display: inline-block;
+    height: 22px;
+
+    border-radius: 2px;
+    color: #fff;
+    line-height: 22px;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .new {
+    background-color: rgb(62, 210, 229);
+  }
+
+  .theme {
+    background-color: rgb(146, 82, 241);
+  }
+
+  .good {
+    background-color: rgb(254, 0, 15);
+  }
+}

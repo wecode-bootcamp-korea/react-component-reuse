@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+
+  html,
+  body,
+  h3,
+  span,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  font-family: SFProText, "Apple SD Gothic Neo", AppleSDGothicNeo,
+    "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+.CardList {
+  display: flex;
+}
