@@ -1,4 +1,4 @@
 import ReactDOM from "react-dom";
-import CardList from "./Pages/CardList";
+import Router from "./Routes";
 
-ReactDOM.render(<CardList />, document.getElementById("root"));
+ReactDOM.render(<Router />, document.getElementById("root"));

@@ -1,0 +1,16 @@
+.Form {
+  width: 375px;
+  padding: 32px 20px 48px;
+  background: white;
+  border-radius: 6px;
+
+  p {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(140, 140, 140);
+
+    span {
+      color: rgb(255, 47, 110);
+    }
+  }
+}

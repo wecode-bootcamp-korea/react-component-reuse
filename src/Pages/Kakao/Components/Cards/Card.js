@@ -19,10 +19,9 @@ export default class Card extends Component {
             <p>{desc}</p>
           </div>
           <ul>
-            {items &&
-              items.map((item, idx) => {
-                return <Item key={idx} item={item} type={type} />;
-              })}
+            {items?.map((item, idx) => {
+              return <Item key={idx} item={item} type={type} />;
+            })}
           </ul>
         </div>
       </article>
