@@ -5,25 +5,21 @@ import "./Form.scss";
 
 export default class Form extends Component {
   render() {
-    const { type, format } = this.props;
-    const table = {
-      signUp: "회원가입",
-      signIn: "로그인",
-    };
+    const { format } = this.props;
 
     return (
       <div className="Form">
         <header>
           <div className="logo" />
         </header>
-        <h2>{table[type]}</h2>
+        <h2>{format.text}</h2>
         <div>
-          {format.map((input, idx) => {
-            return <Input key={idx} type={input.type} />;
-          })}
+          {format.data.map((input, idx) => (
+            <Input key={idx} type={input.type} text={input.text} />
+          ))}
         </div>
-        <Button value={table[type]} />
-        {type === "signUp" && (
+        <Button value={format.text} />
+        {format.type === "signUp" && (
           <p className="isAlreadyLogin">
             이미 가입하셨나요? <span>로그인</span>
           </p>

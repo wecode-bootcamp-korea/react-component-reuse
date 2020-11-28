@@ -6,30 +6,43 @@ export default class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        <Form type="signUp" format={signUpProps} />
-        {/* <Form type="signIn" format={signInProps} /> */}
+        {/* <Form type="signUp" format={signUpProps} /> */}
+        <Form type="signIn" format={signInProps} />
       </div>
     );
   }
 }
 
-const signUpProps = [
-  {
-    type: "name",
-  },
-  {
-    type: "email",
-  },
-  {
-    type: "password",
-  },
-];
+const signUpProps = {
+  type: "signUp",
+  text: "회원가입",
+  data: [
+    {
+      type: "name",
+      text: "이름",
+    },
+    {
+      type: "email",
+      text: "이메일",
+    },
+    {
+      type: "password",
+      text: "비밀번호",
+    },
+  ],
+};
 
-const signInProps = [
-  {
-    type: "email",
-  },
-  {
-    type: "password",
-  },
-];
+const signInProps = {
+  type: "signIn",
+  text: "로그인",
+  data: [
+    {
+      type: "email",
+      text: "이메일",
+    },
+    {
+      type: "password",
+      text: "비밀번호",
+    },
+  ],
+};

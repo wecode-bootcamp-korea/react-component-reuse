@@ -3,17 +3,12 @@ import "./Input.scss";
 
 export default class Input extends Component {
   render() {
-    const { type } = this.props;
-    const mapper = {
-      name: "이름",
-      password: "비밀번호",
-      email: "이메일",
-    };
+    const { type, text } = this.props;
 
     return (
       <div className="Input">
         <div className="inputWrapper">
-          <input type={type} placeholder={mapper[type]} />
+          <input type={type} placeholder={text} />
         </div>
       </div>
     );
