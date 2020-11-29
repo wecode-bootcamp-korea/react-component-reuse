@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FormLayout from "./FormLayout";
 import Button from "./Button";
 import Input from "./Input";
 import "./Form.scss";
@@ -8,10 +9,7 @@ export default class Form extends Component {
     const { format } = this.props;
 
     return (
-      <div className="Form">
-        <header>
-          <div className="logo" />
-        </header>
+      <FormLayout>
         <h2>{format.text}</h2>
         <div>
           {format.data.map((input, idx) => (
@@ -24,7 +22,7 @@ export default class Form extends Component {
             이미 가입하셨나요? <span>로그인</span>
           </p>
         )}
-      </div>
+      </FormLayout>
     );
   }
 }
