@@ -6,8 +6,8 @@ export default class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        {/* <Form type="signUp" format={signUpProps} /> */}
-        <Form type="signIn" format={signInProps} />
+        {/* <Form format={signUpProps} /> */}
+        <Form format={signInProps} />
       </div>
     );
   }
