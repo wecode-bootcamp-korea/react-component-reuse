@@ -1,8 +1,10 @@
 .Card {
   margin-right: 20px;
+  width: 330px;
+  display: inline-block;
+  vertical-align: text-top;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
-  width: 330px;
 
   .cardImg {
     img {
