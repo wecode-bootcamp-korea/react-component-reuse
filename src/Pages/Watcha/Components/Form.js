@@ -17,13 +17,13 @@ export default class Form extends Component {
   // }
 
   render() {
-    const { type, text, data } = this.props;
+    const { type, title, inputData } = this.props;
 
     return (
       <FormLayout>
-        <h2>{text}</h2>
+        <h2>{title}</h2>
         <div>
-          {data.map((input, idx) => (
+          {inputData.map((input, idx) => (
             <Input
               key={idx}
               type={input.type}
@@ -34,7 +34,7 @@ export default class Form extends Component {
             />
           ))}
         </div>
-        <Button value={text} />
+        <Button value={title} />
         {type === "signUp" && (
           <p className="isAlreadyLogin">
             이미 가입하셨나요? <span>로그인</span>

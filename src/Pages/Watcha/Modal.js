@@ -6,8 +6,8 @@ export default class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        <Form type="signUp" text="회원가입" data={signUpData} />
-        {/* <Form type="signIn" text="로그인" data={signInData} /> */}
+        <Form type="signUp" title="회원가입" inputData={signUpData} />
+        {/* <Form type="signIn" title="로그인" inputData={signInData} /> */}
       </div>
     );
   }
