@@ -21,25 +21,27 @@ export default class Form extends Component {
 
     return (
       <FormLayout>
-        <h2>{title}</h2>
-        <div>
-          {inputData.map((input, idx) => (
-            <Input
-              key={idx}
-              type={input.type}
-              text={input.text}
-              // value={this.state[input.type]}
-              // handleInput={this.handleInput}
-              // handleValid={validator[input.type]}
-            />
-          ))}
+        <div className="Form">
+          <h2>{title}</h2>
+          <div>
+            {inputData.map((input, idx) => (
+              <Input
+                key={idx}
+                type={input.type}
+                text={input.text}
+                // value={this.state[input.type]}
+                // handleInput={this.handleInput}
+                // handleValid={validator[input.type]}
+              />
+            ))}
+          </div>
+          <Button value={title} />
+          {type === "signUp" && (
+            <p className="isAlreadyLogin">
+              이미 가입하셨나요? <span>로그인</span>
+            </p>
+          )}
         </div>
-        <Button value={title} />
-        {type === "signUp" && (
-          <p className="isAlreadyLogin">
-            이미 가입하셨나요? <span>로그인</span>
-          </p>
-        )}
       </FormLayout>
     );
   }
@@ -50,3 +52,4 @@ export default class Form extends Component {
 //   email: (input) => input?.includes("@" && ".com"),
 //   password: (input) => input.length >= 8,
 // };
+
