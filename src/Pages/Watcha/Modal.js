@@ -6,14 +6,14 @@ export default class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        <Form type="signUp" title="회원가입" inputData={signUpData} />
-        {/* <Form type="signIn" title="로그인" inputData={signInData} /> */}
+        <Form type="signUp" title="회원가입" inputData={SIGNUP_DATA} />
+        {/* <Form type="signIn" title="로그인" inputData={SIGNIN_DATA} /> */}
       </div>
     );
   }
 }
 
-const signUpData = [
+const SIGNUP_DATA = [
   {
     type: "name",
     text: "이름",
@@ -26,10 +26,9 @@ const signUpData = [
     type: "password",
     text: "비밀번호",
   },
-]
+];
 
-
-const signInData = [
+const SIGNIN_DATA = [
   {
     type: "email",
     text: "이메일",
@@ -38,4 +37,4 @@ const signInData = [
     type: "password",
     text: "비밀번호",
   },
-]
+];
