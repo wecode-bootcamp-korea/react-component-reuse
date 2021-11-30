@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import Card from "./Components/Cards/Card";
-import "./CardList.scss";
 import CARD_DATA from "./data";
+import "./CardList.scss";
 
-export default class CardList extends Component {
-  render() {
-    return (
-      <div className="CardList">
-        {CARD_DATA.map((card, idx) => <Card key={idx} card={card} />)}
-      </div>
-    );
-  }
+export default function CardList() {
+  return (
+    <div className="cardList">
+      {CARD_DATA.map((card, idx) => (
+        <Card key={idx} card={card} />
+      ))}
+    </div>
+  );
 }

@@ -1,4 +1,4 @@
 import ReactDOM from "react-dom";
-import Router from "./Routes";
+import Router from "./Router";
 
 ReactDOM.render(<Router />, document.getElementById("root"));

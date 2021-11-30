@@ -1,15 +1,13 @@
-import { Component } from "react";
+import React from "react";
 import "./FormLayout.scss";
 
-export default class FormLayout extends Component {
-  render() {
-    return (
-      <div className="FormLayout">
-        <header>
-          <div className="logo" />
-        </header>
-        {this.props.children}
-      </div>
-    );
-  }
+export default function FormLayout(props) {
+  return (
+    <div className="formLayout">
+      <header>
+        <div className="logo" />
+      </header>
+      {props.children}
+    </div>
+  );
 }

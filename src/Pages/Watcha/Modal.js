@@ -1,16 +1,14 @@
-import { Component } from "react";
+import React from "react";
 import Form from "./Components/Form";
 import "./Modal.scss";
 
-export default class Modal extends Component {
-  render() {
-    return (
-      <div className="Modal">
-        <Form type="signUp" title="회원가입" inputData={SIGNUP_DATA} />
-        {/* <Form type="signIn" title="로그인" inputData={SIGNIN_DATA} /> */}
-      </div>
-    );
-  }
+export default function Modal() {
+  return (
+    <div className="modal">
+      <Form type="signUp" title="회원가입" inputData={SIGNUP_DATA} />
+      {/* <Form type="signIn" title="로그인" inputData={SIGNIN_DATA} /> */}
+    </div>
+  );
 }
 
 const SIGNUP_DATA = [

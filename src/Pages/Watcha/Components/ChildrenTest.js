@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import Button from "./Button";
 
-class ChildrenTest extends Component {
-  render() {
-    return <Button value="Hello 22th" />;
-  }
+function ChildrenTest() {
+  return (
+    // <Button>Hello 27th</Button>
+    <Button value="Hello 27th" />
+  );
 }
 
 export default ChildrenTest;
