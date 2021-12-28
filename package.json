@@ -39,5 +39,8 @@
   },
   "devDependencies": {
     "css-select": "^4.2.1"
+  },
+  "resolutions": {
+    "css-select": "^4.2.1"
   }
 }
