@@ -38,7 +38,9 @@
     ]
   },
   "devDependencies": {
-    "css-select": "^4.2.1"
+    "css-select": "^4.2.1",
+    "node-forge": ">=1.0.0",
+    "follow-redirects": ">=1.14.7"
   },
   "resolutions": {
     "css-select": "^4.2.1"
