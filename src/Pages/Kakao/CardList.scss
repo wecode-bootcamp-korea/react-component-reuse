@@ -1,19 +1,108 @@
-* {
-  box-sizing: border-box;
-  font-family: Roboto, "Noto Sans KR", sans-serif;
-}
+.cardList {
+  .card {
+    margin-right: 20px;
+    width: 350px;
+    display: inline-block;
+    vertical-align: text-top;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
 
-html,
-body,
-h3,
-span,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
+    .cardImg {
+      img {
+        width: 100%;
+      }
+    }
 
-li {
-  list-style: none;
+    .cardMain {
+      padding: 20px 30px;
+
+      .status {
+        span {
+          padding: 0 8px;
+          display: inline-block;
+          height: 22px;
+
+          border-radius: 2px;
+          color: #fff;
+          line-height: 22px;
+          letter-spacing: normal;
+          font-weight: 700;
+          font-size: 12px;
+        }
+
+        .new {
+          background-color: rgb(62, 210, 229);
+        }
+
+        .theme {
+          background-color: rgb(146, 82, 241);
+        }
+
+        .good {
+          background-color: rgb(254, 0, 15);
+        }
+      }
+
+      h3 {
+        font-size: 28px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 16px;
+        color: rgb(102, 102, 102);
+        letter-spacing: -0.25px;
+        line-height: 24px;
+      }
+
+      .item {
+        padding: 20px 0;
+
+        &:first-child {
+          margin-top: 20px;
+        }
+
+        .content {
+          .price {
+            font-weight: 700;
+            color: #000 !important;
+          }
+
+          .button {
+            all: unset;
+            min-width: 32px;
+            min-height: 32px;
+
+            background: url("https://t1.kakaocdn.net/friends/new_store/2.0/common/basket-pink-3.png")
+              center center / 100% no-repeat;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+
+        &.list {
+          display: flex;
+          border-top: 1px solid rgb(242, 242, 242);
+
+          img {
+            width: 100px;
+          }
+        }
+
+        &.card {
+          display: inline-block;
+          margin: 20px 0px;
+          padding: 5px;
+          width: 50%;
+          box-shadow: none;
+
+          .content {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
 }

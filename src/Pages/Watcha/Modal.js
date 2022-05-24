@@ -5,17 +5,13 @@ import "./Modal.scss";
 export default function Modal() {
   return (
     <div className="modal">
-      <Form type="signUp" title="회원가입" inputData={SIGNUP_DATA} />
-      {/* <Form type="signIn" title="로그인" inputData={SIGNIN_DATA} /> */}
+      <Form type="signIn" title="로그인" inputData={SIGNIN_DATA} />
+      {/* <Form type="signUp" title="회원가입" inputData={SIGNUP_DATA} /> */}
     </div>
   );
 }
 
-const SIGNUP_DATA = [
-  {
-    type: "name",
-    text: "이름",
-  },
+const SIGNIN_DATA = [
   {
     type: "email",
     text: "이메일",
@@ -26,7 +22,11 @@ const SIGNUP_DATA = [
   },
 ];
 
-const SIGNIN_DATA = [
+const SIGNUP_DATA = [
+  {
+    type: "name",
+    text: "이름",
+  },
   {
     type: "email",
     text: "이메일",
